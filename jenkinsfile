@@ -19,7 +19,7 @@ pipeline {
             steps {
                 bat '"C:\\Users\\hp\\AppData\\Local\\Microsoft\\WinGet\\Packages\\AquaSecurity.Trivy_Microsoft.Winget.Source_8wekyb3d8bbwe\\trivy.exe" image --format json --output trivy-report.json secure-devsecops-app'
 
-                bat 'python generate_report.py'
+                bat '"C:\\Users\\hp\\AppData\\Local\\Programs\\Python\\Python314\\python.exe" generate_report.py'
             }
 
             post {
